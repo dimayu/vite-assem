@@ -1,0 +1,13 @@
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.idea
+.vscode
+.github
+.env
+node_modules
+dist
+build
+package-lock.json
