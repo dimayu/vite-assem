@@ -1,7 +1,7 @@
 let smartgrid = require('smart-grid');
 
 let settings = {
-    outputStyle: 'scss',
+    outputStyle: 'styles',
     columns: 12,
     offset: '32px',
     mobileFirst: false,

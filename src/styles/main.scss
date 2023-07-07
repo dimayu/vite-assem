@@ -1,0 +1,72 @@
+@import "helpers/smart-grid";
+@import "helpers/variables";
+
+.wrapper {
+  @include wrapper;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: Nekst, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1;
+  color: $black;
+  letter-spacing: -0.02px;
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Nekst, sans-serif;
+  color: #fff;
+  background-color: $yellow;
+  border-radius: 40px;
+
+  &:hover {
+    background-color: $black;
+  }
+
+  &:disabled {
+    background: rgba(255, 149, 20, .4);
+  }
+}
+
+.tooltip__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 11px 13px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  pointer-events: none;
+  background-color: #FFF;
+  border-radius: 6px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+
+  &::after {
+    position: absolute;
+    top: 100%;
+    left: 25px;
+    width: 0;
+    height: 0;
+    margin-left: -10px;
+    content: "";
+    border-top: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    transition: all 0.3s ease-in-out;
+  }
+}
