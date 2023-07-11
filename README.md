@@ -14,6 +14,11 @@ npm run dev
 npm run build
 ```
 
+### Components
+````html
+{{> header/header logo="logo" }}
+````
+
 ### Images to webp
 ````html
 <picture>
